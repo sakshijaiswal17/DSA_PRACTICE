@@ -3,9 +3,18 @@ package recursion;
 import java.util.Scanner;
 
 public class CalcPower {
-    public static int pow(int p, int q){
+    /*static int pow(int p, int q){    --> TC : O(q)
         if (q==0) return 1;
         return pow(p,q-1) * p ;
+    }*/
+
+    static int pow(int p , int q){
+        if (q==0) return 1;
+        int smallPow = pow(p,q/2);
+        if(q % 2 == 0){
+            return smallPow * smallPow;
+        }
+        return smallPow * smallPow * p;
     }
 
     public static void main(String[] args) {
