@@ -1,21 +1,19 @@
-package recursion;
+package recursion.Easy;
 
 import java.util.Scanner;
 
-public class PrintIncreasing {
-    public static void print(int n){
+public class PrintFactorial {
+    public static int fact(int n){
         if(n==1){
-            System.out.print("1 ");
-            return;
+            return 1;
         }
-        print(n-1);
-        System.out.print(n + " ");
+        return n * fact(n-1);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
-        print(n);
+        System.out.println(fact(n));
     }
 }

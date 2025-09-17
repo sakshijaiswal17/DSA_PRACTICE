@@ -1,8 +1,7 @@
-package math;
-
+package math.Easy;
 import java.util.Scanner;
 
-public class CheckPalindrome {
+public class ReverseNumber {
     static int reverse(int n){
         int reverseNum = 0;
         while(n > 0){
@@ -17,12 +16,6 @@ public class CheckPalindrome {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
-        int x = reverse(n);
-        if (x==n){
-            System.out.println("Yes " + n + " is a palindrome");
-        }
-        else{
-            System.out.println("No " + n + " is not a palindrome");
-        }
+        System.out.println("Reverse of this number is: " + reverse(n));
     }
 }

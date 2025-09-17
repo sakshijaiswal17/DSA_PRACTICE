@@ -1,19 +1,17 @@
-package recursion;
+package recursion.Easy;
 
 import java.util.Scanner;
 
-public class PrintFactorial {
-    public static int fact(int n){
-        if(n==1){
-            return 1;
-        }
-        return n * fact(n-1);
+public class SumOfDigits {
+    public static int printSum(int n){
+        if (n>=0 && n<9) return n;
+        return printSum(n/10) + n%10 ;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
-        System.out.println(fact(n));
+        System.out.println(printSum(n));
     }
 }

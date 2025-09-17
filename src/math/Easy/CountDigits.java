@@ -1,4 +1,4 @@
-package math;
+package math.Easy;
 
 public class CountDigits {
     static int count(int n){

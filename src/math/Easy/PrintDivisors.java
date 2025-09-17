@@ -1,4 +1,4 @@
-package math;
+package math.Easy;
 import java.util.Scanner;
 
 public class PrintDivisors {
