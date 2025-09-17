@@ -1,5 +1,7 @@
 package math.Easy;
 
+import java.util.Scanner;
+
 public class CountDigits {
     static int count(int n){
         int count = 0;
@@ -12,6 +14,8 @@ public class CountDigits {
     }
 
     public static void main(String[] args) {
-        System.out.println(count(23));
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.println(count(n));
     }
 }
